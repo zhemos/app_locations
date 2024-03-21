@@ -1,16 +1,13 @@
 plugins {
-    alias(libs.plugins.androidApplication)
-    alias(libs.plugins.jetbrainsKotlinAndroid)
+    alias(libs.plugins.locations.android.application)
+    alias(libs.plugins.locations.android.dagger)
 }
 
 android {
     namespace = "com.zm.locations"
-    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.zm.locations"
-        minSdk = 24
-        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -26,20 +23,20 @@ android {
             )
         }
     }
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
-    }
-    kotlinOptions {
-        jvmTarget = "1.8"
+    packaging {
+        resources {
+            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+        }
     }
 }
 
 dependencies {
+    implementation(projects.feature.settings)
+    implementation(projects.feature.budget)
+    implementation(projects.feature.board)
+    implementation(projects.feature.location)
+    implementation(projects.core.designsystem)
 
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.appcompat)
-    implementation(libs.material)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

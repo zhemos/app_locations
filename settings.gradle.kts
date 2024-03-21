@@ -1,4 +1,5 @@
 pluginManagement {
+    includeBuild("build-logic")
     repositories {
         google {
             content {
@@ -20,5 +21,13 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "Locations"
+
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+
 include(":app")
- 
+include(":feature:settings")
+include(":feature:budget")
+include(":feature:board")
+include(":feature:location")
+include(":core:designsystem")
+include(":core:common")
