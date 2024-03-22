@@ -39,5 +39,9 @@ gradlePlugin {
             id = "locations.android.feature"
             implementationClass = "AndroidFeatureConventionPlugin"
         }
+        register("jvmLibrary") {
+            id = "locations.jvm.library"
+            implementationClass = "JvmLibraryConventionPlugin"
+        }
     }
 }

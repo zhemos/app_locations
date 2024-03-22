@@ -14,6 +14,8 @@ navigationVersion = "2.7.7"
 timberVersion = "5.0.1"
 lifecycleExtVersion = "2.2.0"
 lifecycleVersion = "2.7.0"
+roomVersion = "2.6.1"
+datastoreVersion = "1.0.0-alpha01"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -32,6 +34,10 @@ lifecycle-ext = { group = "androidx.lifecycle", name = "lifecycle-extensions", v
 lifecycle-viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleVersion" }
 lifecycle-runtime = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleVersion" }
 lifecycle-viewmodel-savedstate = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-savedstate", version.ref = "lifecycleVersion" }
+room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "roomVersion" }
+room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "roomVersion" }
+room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "roomVersion" }
+datastore = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "datastoreVersion" }
 
 # Dependencies of the included build-logic
 android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "androidGradlePlugin" }
@@ -48,3 +54,4 @@ locations-android-application = { id = "locations.android.application", version 
 locations-android-dagger = { id = "locations.android.dagger", version = "unspecified" }
 locations-android-library = { id = "locations.android.library", version = "unspecified" }
 locations-android-feature = { id = "locations.android.feature", version = "unspecified" }
+locations-jvm-library = { id = "locations.jvm.library", version = "unspecified" }

@@ -17,6 +17,8 @@ class AndroidLibraryConventionPlugin : Plugin<Project> {
             defaultConfig.targetSdk = 34
         }
         dependencies {
+            add("implementation", libs.findLibrary("kotlinx.coroutines.android").get())
+
             add("testImplementation", libs.findLibrary("junit").get())
             add("androidTestImplementation", libs.findLibrary("androidx.junit").get())
             add("androidTestImplementation", libs.findLibrary("androidx.espresso.core").get())

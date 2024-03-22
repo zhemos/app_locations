@@ -33,7 +33,7 @@ class App : Application(), LoggerProvider,
     }
 
     private fun initTimber() {
-        if (BuildConfig.DEBUG.not()) return
+//        if (BuildConfig.DEBUG.not()) return
         Timber.plant(Timber.DebugTree())
     }
 }

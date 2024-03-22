@@ -9,4 +9,5 @@
     <string name="board_title">Board</string>
 <!-- Location -->
     <string name="location_title">Location</string>
+    <string name="delete">Delete</string>
 </resources>

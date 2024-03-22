@@ -5,3 +5,7 @@ plugins {
 android {
     namespace = "com.zm.locations.feature.location"
 }
+
+dependencies {
+    implementation(projects.core.cache)
+}

@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.locations.android.application)
     alias(libs.plugins.locations.android.dagger)
+    id("kotlin-kapt")
 }
 
 android {
@@ -40,8 +41,14 @@ dependencies {
     implementation(projects.feature.board)
     implementation(projects.feature.location)
     implementation(projects.core.designsystem)
+    implementation(projects.core.domain)
+    implementation(projects.core.data)
+    implementation(projects.core.cache)
 
     implementation(libs.timber)
+    implementation(libs.room.runtime)
+    implementation(libs.room.ktx)
+    kapt(libs.room.compiler)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

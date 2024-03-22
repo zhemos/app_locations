@@ -9,5 +9,3 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 }
-
-dependencies {}
