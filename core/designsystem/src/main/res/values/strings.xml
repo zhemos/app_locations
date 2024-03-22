@@ -1,0 +1,12 @@
+<resources>
+<!-- App -->
+    <string name="app_name">Locations</string>
+<!-- Settings -->
+    <string name="settings_title">Settings</string>
+<!-- Budget -->
+    <string name="budget_title">Budget</string>
+<!-- Board -->
+    <string name="board_title">Board</string>
+<!-- Location -->
+    <string name="location_title">Location</string>
+</resources>

@@ -9,10 +9,14 @@ class AndroidFeatureConventionPlugin : Plugin<Project> {
     override fun apply(target: Project) = with(target) {
         pluginManager.apply {
             apply("locations.android.library")
+            apply("locations.android.dagger")
         }
         extensions.configure<LibraryExtension> {
             defaultConfig {
                 testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+            }
+            buildFeatures {
+                viewBinding = true
             }
         }
         dependencies {

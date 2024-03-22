@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_graph_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="TODO" />
+
+    <item
+        android:id="@+id/nav_graph_budget"
+        android:icon="@drawable/ic_budget"
+        android:title="TODO" />
+
+    <item
+        android:title="TODO" />
+
+    <item
+        android:id="@+id/nav_graph_board"
+        android:icon="@drawable/ic_board"
+        android:title="TODO" />
+
+    <item
+        android:id="@+id/nav_graph_location"
+        android:icon="@drawable/ic_location"
+        android:title="TODO" />
+
+</menu>
